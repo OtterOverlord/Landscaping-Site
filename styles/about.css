@@ -1,0 +1,382 @@
+:root {
+    --color-primary: #2E5339;
+    --color-secondary: #F5F5F0;
+    --color-tertiary: #4A4A4A;
+    --color-accent: #C97C27;
+    --font-display: 'Merriweather', Georgia, serif;
+    --font-button: 'Sansation', 'Helvetica Neue', Arial, sans-serif;
+    --font-test: "Roboto", sans-serif;
+}
+
+p {
+    font-family: var(--font-test);
+    font-size: 1.1rem;
+}
+
+/* ===== Hero aka H1 ===== */
+.flex-hero {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: var(--font-display);
+}
+
+/* ===== Founder section ===== */
+
+.founder {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.center-flex > h2 {
+    font-size: 3rem;
+    font-family: var(--font-display);
+}
+
+.founder-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.founder-flex > img {
+    max-height: 35rem;
+    border-radius: 5rem;
+    margin-left: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.founder-flex > div {
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.founder-flex > div > p {
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+.founder-flex > div > h3 {
+    font-size: 2.5rem;
+    font-family: var(--font-test);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* ===== Mission section ===== */
+
+.mission {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.mission-pillars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7.5rem;
+}
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 25rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 2rem;
+    height: 20rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.pillar > h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.pillar > p {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 3rem;
+}
+
+/* ===== Contact section ===== */
+
+.action {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contact-flex > h3 {
+    font-size: 2rem;
+    width: 25rem;
+    margin-top: 3.5rem;
+}
+
+.contact-flex > div {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 5rem;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-flex > div > p > span {
+    font-size: 1.25rem;
+}
+
+.contact-flex > div > p  {
+    margin-left: 5rem;
+    margin-top: 3.5rem;
+}
+
+.contact-flex > div > a {
+    margin-left: 5rem;
+}
+
+.contact-flex > div > a > button {
+    width: 100%;
+}
+
+.hr-span {
+    width: 50px;
+    height: 1px;
+    background-color: var(--color-accent);
+}
+
+div > a > button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+/* ===== Responsive Mobile Layout ===== */
+@media (max-width: 1418px) {
+
+    .center-flex > h2 {
+        font-size: 2rem;
+    }
+
+    .center-flex > .big-h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Founder section */
+    .founder-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .founder-flex > img {
+        margin: 0;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .founder-flex > div {
+        margin: 0;
+        width: 90%;
+        font-size: .75rem;
+    }
+
+    /* Mission section */
+    .mission-pillars {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pillar {
+        width: 60%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .pillar > p {
+        line-height: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    /* Contact section */
+    .contact-flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-flex > h3 {
+        width: 90%;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .founder-flex > div > h3 {
+        font-size: 2rem;
+    }
+
+    .contact-flex > div {
+        width: 60%;
+        height: auto;
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+
+    .contact-flex > div > p {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn {
+        scale: 1.20;
+        margin-left: 10%;
+    }
+
+    .contact-flex > div > a {
+        margin: 0;
+    }
+
+    .contact-flex > div > a > button {
+        width: auto;
+    }
+    
+}
+
+
+@media (max-width: 865px) {
+    /* Founder section */
+    .founder-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .founder-flex > img {
+        margin: 0;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .founder-flex > div {
+        margin: 0;
+        width: 80%;
+        font-size: .75rem;
+    }
+
+    /* Mission section */
+    .mission-pillars {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pillar {
+        width: 90%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .pillar > p {
+        line-height: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    /* Contact section */
+    .contact-flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-flex > h3 {
+        width: 90%;
+        margin: 0;
+    }
+
+    .contact-flex > div {
+        width: 90%;
+        height: auto;
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+
+    .contact-flex > div > p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact-flex > div > a {
+        margin: 0;
+    }
+
+    .contact-flex > div > a > button {
+        width: auto;
+    }
+    
+    .center-flex > .big-h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 612px) {
+    .center-flex > h2 {
+        font-size: 1.25rem;
+    }
+
+    .contact-flex > h3 {
+        font-size: 1rem;
+    }
+
+    .founder-flex > div > h3 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    
+}

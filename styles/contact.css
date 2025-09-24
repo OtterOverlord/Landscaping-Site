@@ -1,0 +1,56 @@
+:root {
+    --color-primary: #2E5339;
+    --color-secondary: #F5F5F0;
+    --color-tertiary: #4A4A4A;
+    --color-accent: #C97C27;
+    --font-display: 'Merriweather', Georgia, serif;
+    --font-button: 'Sansation', 'Helvetica Neue', Arial, sans-serif;
+    --font-test: "Roboto", sans-serif;
+}
+
+/* ===== Universal Stuff ===== */
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+.center-flex > h2 {
+    font-size: 3rem;
+    font-family: var(--font-display);
+}
+
+.hero-flex {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-family: var(--font-display);
+}
+
+p {
+    font-family: var(--font-test);
+}
+
+h3 h2 {
+    font-family: var(--font-display);
+}
+
+
+@media (max-width: 865px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
