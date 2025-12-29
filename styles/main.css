@@ -158,6 +158,9 @@ header > nav > a:hover {
 
 .hero-content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     left: 5%;
     max-width: 45rem;
 }
@@ -361,6 +364,26 @@ form .hidden {
     display: none;
 }
 
+.box-button {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-button > button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-button > button > h4 {
+    text-align: center;
+}
+
+
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--color-primary);
@@ -519,13 +542,13 @@ hr {
 
 /* Animate into "X" when active */
 .hamburger-nav.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(4px, 5px);
 }
 .hamburger-nav.active span:nth-child(2) {
     opacity: 0;
 }
 .hamburger-nav.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -11px);
+    transform: rotate(-45deg) translate(8px, -12px);
 }
 
 .mobile-menu {
@@ -592,6 +615,13 @@ hr {
 }
 
 /* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 1418px) {
+    .hero-button {
+        
+    }
+}
+
 @media (max-width: 1145px) {
     .hero-div {
         min-height: 50vh;
@@ -723,6 +753,4 @@ hr {
         text-align: right;
     }
 }
-
-
 
